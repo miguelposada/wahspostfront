@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginForm from "./LoginForm";
-import NotesPage from "./NotesPage"; // Asegúrate de importar NotesPage
+import NotesPage from "./NotesPage";
 
 function App() {
   return (

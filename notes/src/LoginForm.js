@@ -6,6 +6,7 @@ function LoginForm() {
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [userID, setUserID] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,19 +18,18 @@ function LoginForm() {
       );
       console.log(response.status, response.data.message);
       if (response.data.token) {
-        const token = response.data.token;
+        const { token, userId } = response.data;
 
-        // Almacenar el token en localStorage o en una cookie para su uso posterior.
         localStorage.setItem("token", token);
+        localStorage.setItem("userId", userId);
 
-        // Redirigir a la página de notas después de la autenticación.
+        setUserID(userID);
+
         navigate("/notes");
       } else {
         setError(`Wrong Credentials. ${response.data.message}`);
       }
-      // Si la autenticación fue exitosa, se asume que el servidor devolvió un token.
     } catch (error) {
-      // Si hubo un error en la autenticación, muestra un mensaje de error.
       setError(`Error with login process. ${error}`);
     }
   };
