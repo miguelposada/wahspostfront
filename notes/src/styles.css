@@ -1,0 +1,103 @@
+/* Estilos para centrar el contenido en la pantalla */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para los contenedores de formularios */
+.form-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Estilos para los elementos del formulario */
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Estilos específicos para el formulario de registro (.register-container) */
+.register-container {
+  background-color: #f9f9f9;
+  text-align: center; /* Centra el contenido en el contenedor */
+}
+
+.register-container input {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 8px auto; /* Centra los elementos input horizontalmente */
+}
+
+.register-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos específicos para el formulario de inicio de sesión (.login-container) */
+.login-container {
+  background-color: #fff;
+  text-align: center; /* Centra el contenido en el contenedor */
+}
+
+.login-container input {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 8px auto; /* Centra los elementos input horizontalmente */
+}
+
+.login-container button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #218838;
+}
