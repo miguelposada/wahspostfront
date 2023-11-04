@@ -69,6 +69,7 @@ body {
   border-radius: 3px;
   padding: 10px;
   cursor: pointer;
+  margin: 15px;
 }
 
 .register-container button:hover {
@@ -96,6 +97,7 @@ body {
   border-radius: 5px;
   padding: 12px;
   cursor: pointer;
+  margin: 15px;
 }
 
 .login-container button:hover {
