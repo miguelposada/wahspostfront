@@ -153,7 +153,6 @@ function NotesPage() {
                 <button onClick={() => handleDeleteNote(note._id)}>
                   Delete
                 </button>{" "}
-                {/* Botón de eliminación */}
               </>
             )}
           </li>
